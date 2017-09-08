@@ -6,7 +6,7 @@ exports.moveMouseToLocationAndDClick = function(x, y){
 }
 
 exports.inputText = function(text){
-	robot.typeString(text);
+	robot.typeStringDelayed(text, 200);
 }
 
 exports.keyPressed = function(key, count){
