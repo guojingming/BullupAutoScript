@@ -44,33 +44,8 @@ function processLoginPacket(stdout){
 function processRoomPacket(stdout){
     var roomPacket = {};
     roomPacket.head = "room";
-    var blueSide = [];
-    var redSide = [];
-    var blueSideCount = 0;
-    var redSideCount = 0;
-    if(stdout.myTeam[0].team == 1){
-        //My team is blue
-        for(var playerIndex in stdout.myTeam){
-            blueSide[blueSideCount] = stdout.myTeam[playerIndex].summonerId;
-            blueSideCount++;
-        }
-        for(var playerIndex in stdout.theirTeam){
-            redSide[redSideCount] = stdout.theirTeam[playerIndex].summonerId;
-            redSideCount++;
-        }
-    }else{
-        //My team is red
-        for(var playerIndex in stdout.theirTeam){
-            blueSide[blueSideCount] = stdout.theirTeam[playerIndex].summonerId;
-            blueSideCount++;
-        }
-        for(var playerIndex in stdout.myTeam){
-            redSide[redSideCount] = stdout.myTeam[playerIndex].summonerId;
-            redSideCount++;
-        }
-    }
-    roomPacket.blueSide = blueSide;
-    roomPacket.redSide = redSide;
+    roomPacket.myTeam = stdout.myTeam;
+    roomPacket.theirTeam = stdout.theirTeam;
     return roomPacket;
 }
 
