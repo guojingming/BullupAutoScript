@@ -10,7 +10,7 @@ function readJsonStr(path, callback){
     });
 }
  
-process.execSync('BullupService gameMode');
+process.execSync('C:/Users/Public/Bullup/auto_program/BullupService gameMode');
 readJsonStr('C:/Users/Public/Bullup/log.txt', function(jsonStr){
     console.log(jsonStr);
 });
