@@ -1,16 +1,20 @@
 var child_process = require("child_process");
 
-exports.grabLOLData = function(type){
-    child_process.exec('node sync_lol_' + type + '_process.js', function (error, stdout, stderr) {
+exports.grabLOLData = function(type, socket){
+    child_process.exec('node C:/Users/Public/Bullup/auto_program/sync_lol_' + type + '_process.js', function (error, stdout, stderr) {
+        var fs = require('fs');
         if (error) {
-            console.log(error.stack);
-            console.log('Error code: '+error.code);
-            console.log('Signal received: '+error.signal);
+            // console.log(error.stack);
+            // console.log('Error code: '+error.code);
+            // console.log('Signal received: '+error.signal);
+            fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupError.txt", error);
         }
         if(stderr){
-            console.log('sync_lol_process stderr: ' + stderr);
+            //console.log('sync_lol_process stderr: ' + stderr);
+            fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdError.txt", stderr);
         }
         stdout = JSON.parse(stdout);
+        fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdout.txt", JSON.stringify(stdout));
         var packet;
         if(stdout.UserInfo != undefined){
             packet = processLoginPacket(stdout);
