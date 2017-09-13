@@ -14,7 +14,7 @@ exports.grabLOLData = function(type, socket){
             fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdError.txt", stderr);
         }
         stdout = JSON.parse(stdout);
-        fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdout.txt", JSON.stringify(stdout));
+        fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdout.txt", socket.id);
         var packet;
         if(stdout.UserInfo != undefined){
             packet = processLoginPacket(stdout);
