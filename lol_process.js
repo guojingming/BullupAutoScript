@@ -14,11 +14,12 @@ exports.grabLOLData = function(type, socket){
             fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdError.txt", stderr);
         }
         stdout = JSON.parse(stdout);
-        fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdout.txt", socket.id);
+        //fs.writeFileSync("C:/Users/Public/Bullup/auto_program/BullupStdout.txt", JSON.parse(stdout));
         var packet;
         if(stdout.UserInfo != undefined){
             packet = processLoginPacket(stdout);
             socket.emit('lolLoginResult', packet);
+        //}else if(stdout.BattleInfo != undefined){
         }else if(stdout.actions != undefined){
             packet = processRoomPacket(stdout);
             socket.emit('lolRoomEstablished', packet);
@@ -44,6 +45,9 @@ function processLoginPacket(stdout){
 function processRoomPacket(stdout){
     var roomPacket = {};
     roomPacket.head = "room";
+    // stdout = stdout.BattleInfo.gameData;
+    // roomPacket.myTeam = stdout.teamOne;
+    // roomPacket.theirTeam = stdout.teamTwo;
     roomPacket.myTeam = stdout.myTeam;
     roomPacket.theirTeam = stdout.theirTeam;
     return roomPacket;
@@ -63,3 +67,5 @@ function processResultPacket(stdout){
     return resultPacket;
 }
 
+//exports.grabLOLData("login", null);
+//exports.grabLOLData("room", null);

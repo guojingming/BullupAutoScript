@@ -20,15 +20,15 @@ void _stdcall ReceiveMessage(char *args)
 	std::string message = args;
 	std::string key = "bullup2017@{lol}";//你的密码
 	std::string decodeStr = Decoder(message, key);
-	std::string result = UTF8ToGBK(decodeStr);
+	//std::string result = UTF8ToGBK(decodeStr);
 	FILE* fp = fopen("C:/Users/Public/Bullup/log.txt", "wb");
 	if (fp != NULL) {
 		fseek(fp, 0, SEEK_END);
-		fputs(result.c_str(), fp);
+		fputs(decodeStr.c_str(), fp);
 		fclose(fp);
 	}
-	printf("%d\n", result.find(head));
-	int code = result.find(head);
+	printf("%d\n", decodeStr.find(head));
+	int code = decodeStr.find(head);
 	if (code > 0){
 		flag = false;
 		exit(0);
@@ -41,7 +41,8 @@ void _stdcall ReceiveMessage(char *args)
 typedef void(*pMain)(DWORD procAddress);
 int _tmain(int argc, _TCHAR* argv[]){
 	head = argv[1];
-	std::string filePath = "LolDataHelper.dll";
+	//head = "actions";
+	std::string filePath = "C:\\Users\\Public\\Bullup\\auto_program\\LolDataHelperNew.dll";
 	HMODULE hModule = LoadLibrary(filePath.c_str());
 	if (hModule == NULL){
 		std::cout << "程序运行失败!" << std::endl;
