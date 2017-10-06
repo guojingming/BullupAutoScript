@@ -1,6 +1,8 @@
 var cdr = require("child_process");
 var robot = require("./robot");
-var async = require("async")
+var async = require("async");
+
+var robotOri = require("robotjs");
 
 var area = "china";
 //var area = "america";
@@ -35,3 +37,9 @@ exports.findPictureAndClick = function(windowName, templatePath, callback){
         callback(matchResult);
     });
 }
+
+exports.findLOLPicture('play.bmp', function(matchResult){
+    var match = matchResult;
+    robotOri.moveMouse(matchResult.window_x + matchResult.template_x + 65 , matchResult.window_y + matchResult.template_y);
+    console.log(match);
+});

@@ -34,95 +34,13 @@ Example:
 
 */
 int main(int argc, char* argv[]){
-
-	//Show Usage
-	//if (argc < 3) {
-	//	printf("\n");
-	//	printf("Usage:\n");
-	//	printf("\n");
-	//	printf("./PictureMatcher.exe [<window_caption>] [<template_path>]\n");
-	//	printf("\n");
-	//	printf("Example:\n");
-	//	printf("\n");
-	//	printf("./PictureMatcher.exe [League of Legends] [C:/User/Public/play_btn.png]\n");
-	//	printf("\n");
-	//	return -1;
-	//}
-
-	//bool start_flag = false, end_flag = false, arg1_flag = false, arg2_flag = false;
-	//string arg1 = "";
-	//string arg2 = "";
-	//for (int i = 1; i < argc; i++) {
-	//	string arg = argv[i];
-	//	//single word
-	//	int a = arg.find_first_of(91);
-	//	int b = arg.find_last_of(93);
-	//	if (arg.find_first_of('[') == 0 && arg.find_last_of(']') == arg.length() - 1) {
-	//		if (!arg1_flag) {
-	//			arg1 = arg.substr(1, arg.length() - 2);
-	//			arg1_flag = true;
-	//		} else if (!arg2_flag) {
-	//			arg2 = arg.substr(1, arg.length() - 2);
-	//			arg2_flag = true;
-	//		}
-	//		continue;
-	//	} else {
-	//		if (arg.find_first_of('[') == 0) {
-	//			start_flag = true;
-	//			arg = arg.substr(1);
-	//			end_flag = false;
-	//		}
-	//		if (arg.find_last_of(']') == arg.length() - 1) {
-	//			start_flag = false;
-	//			end_flag = true;
-	//		}
-	//		//
-	//		if (start_flag) {
-	//			if (!arg1_flag) {
-	//				arg1 += arg;
-	//			} else if (!arg2_flag) {
-	//				arg2 += arg;
-	//			}
-	//		}
-	//		if (!end_flag) {
-	//			if (!arg1_flag) {
-	//				arg1 += " ";
-	//			} else if (!arg2_flag) {
-	//				arg2 += " ";
-	//			}
-	//			continue;
-	//		} else {
-	//			if (!arg1_flag) {
-	//				arg1 += arg.substr(0, arg.length() - 1);
-	//				arg1_flag = true;
-	//			} else if (!arg2_flag) {
-	//				arg2 += arg.substr(0, arg.length() - 1);
-	//				arg2_flag = true;
-	//			}
-	//			end_flag = false;
-	//			continue;
-	//		}
-	//	}
-	//}
-	//if (!(arg1_flag && arg2_flag)) {
-	//	printf("\n");
-	//	printf("Something wrong with input pattern!\n");
-	//	printf("\n");
-	//	printf("Usage:\n");
-	//	printf("\n");
-	//	printf("./PictureMatcher.exe [<window_caption>] [<template_path>]\n");
-	//	printf("\n");
-	//	printf("Example:\n");
-	//	printf("\n");
-	//	printf("./PictureMatcher.exe [League of Legends] [C:/User/Public/play_btn.png]\n");
-	//	printf("\n");
-	//}
-	//-------------------------------------------------------------------------------------------------------------------//
 	int window_x, window_y, template_x, template_y;
-	get_template_location("League of Legends", argv[1], window_x, window_y, template_x, template_y);
+	//get_template_location("League of Legends", argv[1], window_x, window_y, template_x, template_y);
+	get_template_location("League of Legends", "C:/Users/Public/Bullup/auto_program/resources/china/play.bmp", window_x, window_y, template_x, template_y);
+
 	printf("{ \"window_x\": %d,\"window_y\": %d,\"template_x\": %d,\"template_y\": %d }", window_x, window_y, template_x, template_y);
-	//printf("%d %d %d %d");
-	//
+	
+	//system("pause");
 	return 0;
 }
 
@@ -137,7 +55,7 @@ int get_template_location(const char * window_caption, const char * template_pat
 	//加载源图像
 	src = cvLoadImage("C:/Users/Public/Bullup/screen_shot.png", CV_LOAD_IMAGE_GRAYSCALE);
 	//用于显示结果
-	//show = cvLoadImage("D:\\test.png");
+
 	//加载模板图像
 	templat = cvLoadImage(template_path, CV_LOAD_IMAGE_GRAYSCALE);
 	srcW = src->width;
