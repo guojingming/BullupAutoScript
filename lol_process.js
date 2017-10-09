@@ -34,11 +34,21 @@ exports.grabLOLData = function(type, socket){
 
 function processLoginPacket(stdout){
     var loginPacket = {};
+    var rankTierInfo = String(stdout.UserInfo.rankedTierInfo);
+    var ranks = ['UNRANKED','BRONZE','SILVER','GOLD','PLATINUM','DIAMOND','MASTER','CHALLENGER'];
+    loginPacket.currentRank = 'UNRANKED';
+    for(var index in ranks){
+        if(rankTierInfo.indexOf(ranks[index]) != -1){
+            loginPacket.currentRank = ranks[index];
+            break;
+        }
+    }
     loginPacket.head = "user";
     loginPacket.accountId = stdout.UserInfo.userId;
 	loginPacket.nickname = stdout.UserInfo.displayName;
     loginPacket.lastRank = stdout.UserInfo.lastSeasonRank;
-    //{head: "user", accountId: 2936285067, nickname: "Spa丶", lastRank: "UNRANKED"}
+    loginPacket.serverName = stdout.UserInfo.serverName;
+    //{head: "user", accountId: 2936285067, nickname: "Spa丶", lastRank: "UNRANKED", currenRank: "SILVER", serverName: "外服"}
     return loginPacket;
 }
 
@@ -67,5 +77,5 @@ function processResultPacket(stdout){
     return resultPacket;
 }
 
-//exports.grabLOLData("login", null);
+exports.grabLOLData("login", null);
 //exports.grabLOLData("room", null);
