@@ -73,9 +73,42 @@ function processResultPacket(stdout){
         resultPacket.win = "yes";
     }else{
 		resultPacket.win = "no";
-	}
+    }
+    resultPacket.participants = [];
+
+    var team1 = stdout.teams[0].players;
+    for(var playerIndex in team1){
+        var player = {};
+        player.accountId = team1[playerIndex].summonerId;
+        player.stats = {};
+        player.stats.kill = team1[playerIndex].stats.CHAMPIONS_KILLED;
+        player.stats.damage = team1[playerIndex].stats.TOTAL_DAMAGE_DEALT_TO_CHAMPIONS;
+        player.stats.damageTaken = team1[playerIndex].stats.TOTAL_DAMAGE_TAKEN;
+        player.stats.heal = team1[playerIndex].stats.TOTAL_HEAL;
+        player.stats.goldEarned = team1[playerIndex].stats.GOLD_EARNED;
+        player.stats.death = team1[playerIndex].stats.NUM_DEATHS;
+        player.stats.assists= team1[playerIndex].stats.ASSISTS;
+        resultPacket.participants.push(player);
+    }
+
+    var team2 = stdout.teams[1].players;
+    for(var playerIndex in team2){
+        var player = {};
+        player.accountId = team2[playerIndex].summonerId;
+        player.stats = {};
+        player.stats.kill = team2[playerIndex].stats.CHAMPIONS_KILLED;
+        player.stats.damage = team2[playerIndex].stats.TOTAL_DAMAGE_DEALT_TO_CHAMPIONS;
+        player.stats.damageTaken = team2[playerIndex].stats.TOTAL_DAMAGE_TAKEN;
+        player.stats.heal = team2[playerIndex].stats.TOTAL_HEAL;
+        player.stats.goldEarned = team2[playerIndex].stats.GOLD_EARNED;
+        player.stats.death = team2[playerIndex].stats.NUM_DEATHS;
+        player.stats.assists= team2[playerIndex].stats.ASSISTS;
+        resultPacket.participants.push(player);
+    }
+
     return resultPacket;
 }
 
-exports.grabLOLData("login", null);
+//exports.grabLOLData("login", null);
 //exports.grabLOLData("room", null);
+//exports.grabLOLData("result", null);
