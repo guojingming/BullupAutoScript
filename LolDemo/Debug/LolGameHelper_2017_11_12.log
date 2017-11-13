@@ -1,0 +1,49 @@
+[2017-11-12 23:41:42]|[298c]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:41:44]|[259c]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:41:44]|[259c]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:44:49]|[21b8]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:44:51]|[1f68]|[Info] [Lol-info]获取个人信息成功:{"UserInfo":{"displayName":"JingmingGuo","lastSeasonRank":"UNRANKED","profileIconId":7,"puuid":"2927a89d-92fc-51ee-86bb-5a804f4112b9","rankedTierInfo":"{\r\n    \"rankedData\": [],\r\n    \"summonerId\": 88542235\r\n}","serverId":"","serverName":"外服","summonerLevel":1,"userAuthToken":"{\r\n    \"account_id\": 239799266,\r\n    \"account_name\": \"qq554214553\",\r\n    \"fingerprint\": \"7823ae2957be6d04243330e71143cf98\",\r\n    \"ip\": \"68.8.121.122\",\r\n    \"other\": \"VEmu9bFsgdB6FjLGO2fwael4a8KcO3XIrFHWlJz0jXcfGiArU7P0IOMVl44FzbFtbnj+0pJ0xeJRBkdUXXAGcw==\",\r\n    \"partner_token\": \"Bearer eyJraWQiOiJzMSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTI3YTg5ZC05MmZjLTUxZWUtODZiYi01YTgwNGY0MTEyYjkiLCJzY3AiOlsib3BlbmlkIl0sImNsbSI6WyJvcGVuaWQiLCJyZ25fTkExIl0sImRhdCI6eyJ1IjoyMzk3OTkyNjYsInIiOiJOQTEifSwiaXNzIjoiaHR0cHM6XC9cL2F1dGgucmlvdGdhbWVzLmNvbSIsImV4cCI6MTUxMDU1MDQwNSwiaWF0IjoxNTEwNTQ5ODA1LCJqdGkiOiJ4dGs4Ql9RWHNmQSIsImNpZCI6ImxvbCJ9.FLLdXNPxx68tovP72eedJPeDsO8P3hGJ_7gq_YskAp1MxhfNRkQQZNGCnLtWMdfsIZPUnZz-ZTLP_FBopITHhsqWR_3n_fPTxb8itzUp6BFoPe3EvZeNdHr0moWwP7kYNTrF8zmr3cxSK6vH29Qsh1JB_O58zMqRM0DBLaBXJG4\",\r\n    \"resources\": \"lol\",\r\n    \"signature\": \"A1AYxpeDVFEwU92GZLFtatah57C0XdKL85PC3eJTpBL7TtiIBEdQiEeAn0Np9p+DTyXbZLsbwkkrWw0DZocwUWS/Gjx4FkUfVYEKzddLJ1nEWIqGkEszMy45pFzhS90WC0DJywmOhKJayWE2NtzRF88sMD2+DnTpyHuaBmcys1A=\",\r\n    \"timestamp\": 1510549805684,\r\n    \"uuid\": \"ac926645-1ba4-49d6-8941-346cf89640eb\"\r\n}","userId":"88542235"}}
+
+[2017-11-12 23:44:59]|[1ee0]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:45:02]|[2db8]|[Info] [Lol-info]获取个人信息成功:{"UserInfo":{"displayName":"JingmingGuo","lastSeasonRank":"UNRANKED","profileIconId":7,"puuid":"2927a89d-92fc-51ee-86bb-5a804f4112b9","rankedTierInfo":"{\r\n    \"rankedData\": [],\r\n    \"summonerId\": 88542235\r\n}","serverId":"","serverName":"外服","summonerLevel":1,"userAuthToken":"{\r\n    \"account_id\": 239799266,\r\n    \"account_name\": \"qq554214553\",\r\n    \"fingerprint\": \"7823ae2957be6d04243330e71143cf98\",\r\n    \"ip\": \"68.8.121.122\",\r\n    \"other\": \"VEmu9bFsgdB6FjLGO2fwael4a8KcO3XIrFHWlJz0jXcfGiArU7P0IOMVl44FzbFtbnj+0pJ0xeJRBkdUXXAGcw==\",\r\n    \"partner_token\": \"Bearer eyJraWQiOiJzMSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTI3YTg5ZC05MmZjLTUxZWUtODZiYi01YTgwNGY0MTEyYjkiLCJzY3AiOlsib3BlbmlkIl0sImNsbSI6WyJvcGVuaWQiLCJyZ25fTkExIl0sImRhdCI6eyJ1IjoyMzk3OTkyNjYsInIiOiJOQTEifSwiaXNzIjoiaHR0cHM6XC9cL2F1dGgucmlvdGdhbWVzLmNvbSIsImV4cCI6MTUxMDU1MDQwNSwiaWF0IjoxNTEwNTQ5ODA1LCJqdGkiOiJ4dGs4Ql9RWHNmQSIsImNpZCI6ImxvbCJ9.FLLdXNPxx68tovP72eedJPeDsO8P3hGJ_7gq_YskAp1MxhfNRkQQZNGCnLtWMdfsIZPUnZz-ZTLP_FBopITHhsqWR_3n_fPTxb8itzUp6BFoPe3EvZeNdHr0moWwP7kYNTrF8zmr3cxSK6vH29Qsh1JB_O58zMqRM0DBLaBXJG4\",\r\n    \"resources\": \"lol\",\r\n    \"signature\": \"A1AYxpeDVFEwU92GZLFtatah57C0XdKL85PC3eJTpBL7TtiIBEdQiEeAn0Np9p+DTyXbZLsbwkkrWw0DZocwUWS/Gjx4FkUfVYEKzddLJ1nEWIqGkEszMy45pFzhS90WC0DJywmOhKJayWE2NtzRF88sMD2+DnTpyHuaBmcys1A=\",\r\n    \"timestamp\": 1510549805684,\r\n    \"uuid\": \"ac926645-1ba4-49d6-8941-346cf89640eb\"\r\n}","userId":"88542235"}}
+
+[2017-11-12 23:46:49]|[0214]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:46:50]|[1b88]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:46:50]|[1b88]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:48:15]|[0744]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:48:16]|[1318]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:48:16]|[1318]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:49:18]|[1244]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:49:19]|[29a8]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:49:19]|[29a8]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:50:59]|[24f0]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:51:01]|[25e4]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:51:01]|[25e4]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:51:47]|[2b84]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:51:48]|[17a8]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:51:48]|[17a8]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:52:11]|[22f0]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:52:21]|[2d64]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:52:21]|[2d64]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:52:27]|[2c90]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:52:28]|[185c]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:52:28]|[185c]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:52:37]|[2c58]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:53:16]|[2094]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:53:17]|[21c8]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:53:17]|[21c8]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:53:39]|[12b4]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:53:40]|[17b4]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:53:40]|[17b4]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:55:19]|[2be8]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:55:21]|[2dbc]|[Info] [Lol-info]获取个人信息成功:{"UserInfo":{"displayName":"JingmingGuo","lastSeasonRank":"UNRANKED","profileIconId":7,"puuid":"2927a89d-92fc-51ee-86bb-5a804f4112b9","rankedTierInfo":"{\r\n    \"rankedData\": [],\r\n    \"summonerId\": 88542235\r\n}","serverId":"","serverName":"外服","summonerLevel":1,"userAuthToken":"{\r\n    \"account_id\": 239799266,\r\n    \"account_name\": \"qq554214553\",\r\n    \"fingerprint\": \"7823ae2957be6d04243330e71143cf98\",\r\n    \"ip\": \"68.8.121.122\",\r\n    \"other\": \"VEmu9bFsgdB6FjLGO2fwael4a8KcO3XIrFHWlJz0jXcfGiArU7P0IOMVl44FzbFtbnj+0pJ0xeJRBkdUXXAGcw==\",\r\n    \"partner_token\": \"Bearer eyJraWQiOiJzMSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyOTI3YTg5ZC05MmZjLTUxZWUtODZiYi01YTgwNGY0MTEyYjkiLCJzY3AiOlsib3BlbmlkIl0sImNsbSI6WyJvcGVuaWQiLCJyZ25fTkExIl0sImRhdCI6eyJ1IjoyMzk3OTkyNjYsInIiOiJOQTEifSwiaXNzIjoiaHR0cHM6XC9cL2F1dGgucmlvdGdhbWVzLmNvbSIsImV4cCI6MTUxMDU1MDQwNSwiaWF0IjoxNTEwNTQ5ODA1LCJqdGkiOiJ4dGs4Ql9RWHNmQSIsImNpZCI6ImxvbCJ9.FLLdXNPxx68tovP72eedJPeDsO8P3hGJ_7gq_YskAp1MxhfNRkQQZNGCnLtWMdfsIZPUnZz-ZTLP_FBopITHhsqWR_3n_fPTxb8itzUp6BFoPe3EvZeNdHr0moWwP7kYNTrF8zmr3cxSK6vH29Qsh1JB_O58zMqRM0DBLaBXJG4\",\r\n    \"resources\": \"lol\",\r\n    \"signature\": \"A1AYxpeDVFEwU92GZLFtatah57C0XdKL85PC3eJTpBL7TtiIBEdQiEeAn0Np9p+DTyXbZLsbwkkrWw0DZocwUWS/Gjx4FkUfVYEKzddLJ1nEWIqGkEszMy45pFzhS90WC0DJywmOhKJayWE2NtzRF88sMD2+DnTpyHuaBmcys1A=\",\r\n    \"timestamp\": 1510549805684,\r\n    \"uuid\": \"ac926645-1ba4-49d6-8941-346cf89640eb\"\r\n}","userId":"88542235"}}
+
+[2017-11-12 23:55:30]|[24f0]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:55:31]|[01d0]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:55:31]|[01d0]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:55:34]|[2444]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:55:34]|[2d50]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:55:34]|[2d50]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!
+[2017-11-12 23:56:57]|[1728]|[Info] [Lol-info]LolGameHelper日志初始化成功!
+[2017-11-12 23:56:58]|[0578]|[Error] [LolHelper-err]ProtectApplication failed with error 0
+[2017-11-12 23:56:58]|[0578]|[Error] [Lol-err]您使用权期限已过,请联系数据周杰伦管理员!

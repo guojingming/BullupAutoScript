@@ -27,7 +27,7 @@ void _stdcall ReceiveMessage(char *args)
 		fputs(decodeStr.c_str(), fp);
 		fclose(fp);
 	}
-	printf("%d\n", decodeStr.find(head));
+	printf("%s\n", decodeStr.c_str());
 	int code = decodeStr.find(head);
 	if (code > 0){
 		flag = false;
@@ -38,14 +38,14 @@ void _stdcall ReceiveMessage(char *args)
 //actions
 //gameMode
 
-typedef void(*pMain)(DWORD procAddress);
+typedef void(_stdcall *pMain)(DWORD procAddress);
 int _tmain(int argc, _TCHAR* argv[]){
 	head = argv[1];
-	//head = "actions";
+	//head = "UserInfo";
 	std::string filePath = "C:\\Users\\Public\\Bullup\\auto_program\\LolDataHelperNew.dll";
 	HMODULE hModule = LoadLibrary(filePath.c_str());
 	if (hModule == NULL){
-		std::cout << "³ÌÐòÔËÐÐÊ§°Ü!" << std::endl;
+		std::cout <<1235<< std::endl;
 		return -1;
 	}
 	pMain Main = (pMain)GetProcAddress(hModule, "Main");
@@ -53,6 +53,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	while (flag){
 		continue;
 	}
+	//system("pause");
 	return 0;
 }
 
