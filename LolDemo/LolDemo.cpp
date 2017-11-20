@@ -35,17 +35,22 @@ void _stdcall ReceiveMessage(char *args)
 	}
 }
 //UserInfo
-//actions
-//gameMode
+//BattleInfo
+//GameData
 
 typedef void(_stdcall *pMain)(DWORD procAddress);
 int _tmain(int argc, _TCHAR* argv[]){
-	head = argv[1];
-	//head = "UserInfo";
+	//head = argv[1];
+	head = "GameData";
 	std::string filePath = "C:\\Users\\Public\\Bullup\\auto_program\\LolDataHelperNew.dll";
 	HMODULE hModule = LoadLibrary(filePath.c_str());
 	if (hModule == NULL){
-		std::cout <<1235<< std::endl;
+		FILE* fp = fopen("C:/Users/Public/Bullup/log.txt", "wb");
+		if (fp != NULL) {
+			fseek(fp, 0, SEEK_END);
+			fputs("³ÌÐò´íÎó", fp);
+			fclose(fp);
+		}
 		return -1;
 	}
 	pMain Main = (pMain)GetProcAddress(hModule, "Main");

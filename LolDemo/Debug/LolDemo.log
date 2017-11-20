@@ -1,21 +1,22 @@
-﻿生成启动时间为 2017/11/13 0:33:39。
-     1>项目“D:\bullupauto\BullupAutoScript\LolDemo\LolDemo.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/11/21 1:20:22。
+     1>项目“C:\Users\Public\Bullup\auto_program\LolDemo\LolDemo.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ICommon\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LolDemo.cpp
          LolDemo.cpp
-     1>d:\bullupauto\bullupautoscript\loldemo\loldemo.cpp(24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\users\public\bullup\auto_program\loldemo\loldemo.cpp(24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>c:\users\public\bullup\auto_program\loldemo\loldemo.cpp(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\bullupauto\BullupAutoScript\LolDemo\Debug\LolDemo.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\CODE\DataZhou\LolDataHelper\LolDataHelper\Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\bullupauto\BullupAutoScript\LolDemo\Debug\LolDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\bullupauto\BullupAutoScript\LolDemo\Debug\LolDemo.lib" /MACHINE:X86 Debug\LolDemo.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Public\Bullup\auto_program\LolDemo\Debug\LolDemo.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\CODE\DataZhou\LolDataHelper\LolDataHelper\Lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Public\Bullup\auto_program\LolDemo\Debug\LolDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Public\Bullup\auto_program\LolDemo\Debug\LolDemo.lib" /MACHINE:X86 Debug\LolDemo.res
          Debug\aes_helper.obj
          Debug\base64.obj
          Debug\Common.obj
          Debug\LolDemo.obj
          Debug\stdafx.obj
-     1>libcrypto.lib(aes_core.obj) : warning LNK4099: ╬┤╒╥╡╜ PDBí░ossl_static.pdbí▒(╩╣╙├í░libcrypto.lib(aes_core.obj)í▒╗≥╘┌í░D:\bullupauto\BullupAutoScript\LolDemo\Debug\ossl_static.pdbí▒╓╨╤░╒╥)ú╗╒²╘┌┴┤╜╙╢╘╧≤ú¼╚τ═¼├╗╙╨╡≈╩╘╨┼╧ó╥╗╤∙
-         LolDemo.vcxproj -> D:\bullupauto\BullupAutoScript\LolDemo\Debug\LolDemo.exe
-     1>已完成生成项目“D:\bullupauto\BullupAutoScript\LolDemo\LolDemo.vcxproj”(Build 个目标)的操作。
+         LolDemo.vcxproj -> C:\Users\Public\Bullup\auto_program\LolDemo\Debug\LolDemo.exe
+     1>已完成生成项目“C:\Users\Public\Bullup\auto_program\LolDemo\LolDemo.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.59
+已用时间 00:00:01.67
